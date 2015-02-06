@@ -95,6 +95,8 @@
     <Content Include="wwwroot\karma.conf.js" />
     <Content Include="wwwroot\protractor.conf.js" />
     <Content Include="wwwroot\src\app.html" />
+    <TypeScriptCompile Include="wwwroot\src\app.ts" />
+    <Content Include="wwwroot\src\welcome.html" />
     <Content Include="wwwroot\styles\styles.css" />
     <Content Include="wwwroot\test\e2e\dist\demo.spec.js" />
     <Content Include="wwwroot\test\e2e\dist\skeleton.po.js" />
@@ -105,13 +107,15 @@
     <Content Include="wwwroot\test\unit\app.spec.js" />
     <Content Include="wwwroot\test\unit\child-router.spec.js" />
     <Content Include="wwwroot\test\unit\flickr.spec.js" />
+    <TypeScriptCompile Include="wwwroot\typings\aurelia\aurelia.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="wwwroot\src\app.ts" />
+    <TypeScriptCompile Include="wwwroot\src\welcome.ts" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -120,6 +124,7 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptModuleKind>amd</TypeScriptModuleKind>
     <TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />

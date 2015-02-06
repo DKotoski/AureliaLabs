@@ -1,19 +1,18 @@
-﻿export class Welcome {
-    public heading: string;
-    public firstName: string;
-    public lastName: string;
+﻿import AureliaRouter = require("aurelia-router");
 
-    constructor() {
-        this.heading = "Welcome to the Aurelia Navigation App (VS/TS)!";
-        this.firstName = "John";
-        this.lastName = "Doe";
-    }
+export class App {
 
-    get fullName() {
-        return this.firstName + " " + this.lastName;
-    }
+    private router: AureliaRouter.Router;
 
-    welcome() {
-        alert("Welcome, " + this.fullName + "!");
+    static inject() { return [AureliaRouter]; }
+
+    constructor(router) {
+        this.router = router;
+        this.router.configure(config => {
+            config.title = 'Aurelia';
+            config.map([
+                { route: ['', 'welcome'], moduleId: 'welcome', nav: true, title: 'Welcome' }
+            ]);
+        });
     }
-}
+}  

@@ -100,19 +100,8 @@
     <Content Include="wwwroot\dist\welcome.html" />
     <Content Include="wwwroot\dist\welcome.js" />
     <Content Include="wwwroot\gulpfile.js" />
-    <Content Include="wwwroot\index.html" />
     <Content Include="wwwroot\karma.conf.js" />
     <Content Include="wwwroot\protractor.conf.js" />
-    <Content Include="wwwroot\src\app.html" />
-    <Content Include="wwwroot\src\app.js" />
-    <Content Include="wwwroot\src\child-router.html" />
-    <Content Include="wwwroot\src\child-router.js" />
-    <Content Include="wwwroot\src\flickr.html" />
-    <Content Include="wwwroot\src\flickr.js" />
-    <Content Include="wwwroot\src\nav-bar.html" />
-    <Content Include="wwwroot\src\nav-bar.js" />
-    <Content Include="wwwroot\src\welcome.html" />
-    <Content Include="wwwroot\src\welcome.js" />
     <Content Include="wwwroot\styles\styles.css" />
     <Content Include="wwwroot\test\e2e\dist\demo.spec.js" />
     <Content Include="wwwroot\test\e2e\dist\skeleton.po.js" />
@@ -126,6 +115,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\src\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

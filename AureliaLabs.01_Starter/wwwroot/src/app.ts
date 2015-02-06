@@ -1,18 +1,21 @@
-﻿import AureliaRouter = require("aurelia-router");
+﻿/// <reference path="../typings/aurelia/aurelia.d.ts" />
+import AureliaRouter = require("aurelia-router");
 
 export class App {
 
-    private router: AureliaRouter.Router;
+    static inject = [AureliaRouter.Router];
 
-    static inject() { return [AureliaRouter]; }
-
-    constructor(router) {
-        this.router = router;
+    constructor(private router: AureliaRouter.Router) {
         this.router.configure(config => {
             config.title = 'Aurelia';
             config.map([
-                { route: ['', 'welcome'], moduleId: 'welcome', nav: true, title: 'Welcome' }
+                {
+                    route: ['', 'welcome'],
+                    moduleId: 'welcome',
+                    nav: true,
+                    title: 'Welcome'
+                }
             ]);
         });
-    }
-}  
+    } 
+}

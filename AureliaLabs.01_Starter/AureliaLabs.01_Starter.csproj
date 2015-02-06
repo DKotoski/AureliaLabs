@@ -96,6 +96,7 @@
     <Content Include="wwwroot\protractor.conf.js" />
     <Content Include="wwwroot\src\app.html" />
     <TypeScriptCompile Include="wwwroot\src\app.ts" />
+    <Content Include="wwwroot\src\flickr.html" />
     <Content Include="wwwroot\src\welcome.html" />
     <Content Include="wwwroot\styles\styles.css" />
     <Content Include="wwwroot\test\e2e\dist\demo.spec.js" />
@@ -107,6 +108,7 @@
     <Content Include="wwwroot\test\unit\app.spec.js" />
     <Content Include="wwwroot\test\unit\child-router.spec.js" />
     <Content Include="wwwroot\test\unit\flickr.spec.js" />
+    <TypeScriptCompile Include="wwwroot\src\flickr.ts" />
     <TypeScriptCompile Include="wwwroot\typings\aurelia\aurelia.d.ts" />
     <TypeScriptCompile Include="wwwroot\typings\es6-promise\es6-promise.d.ts" />
   </ItemGroup>

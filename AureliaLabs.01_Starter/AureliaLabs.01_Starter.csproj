@@ -63,10 +63,66 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="wwwroot\.editorconfig" />
+    <Content Include="wwwroot\.jshintrc" />
+    <Content Include="wwwroot\.npmignore" />
+    <Content Include="wwwroot\CONTRIBUTING.md" />
+    <Content Include="wwwroot\doc\api.json" />
+    <Content Include="wwwroot\doc\CHANGELOG.md" />
+    <Content Include="wwwroot\LICENSE" />
+    <Content Include="wwwroot\package.json" />
+    <Content Include="wwwroot\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="Web.config" />
+    <Content Include="wwwroot\.gitignore" />
+    <Content Include="wwwroot\build\6to5-options.js" />
+    <Content Include="wwwroot\build\paths.js" />
+    <Content Include="wwwroot\build\tasks\build.js" />
+    <Content Include="wwwroot\build\tasks\clean.js" />
+    <Content Include="wwwroot\build\tasks\dev.js" />
+    <Content Include="wwwroot\build\tasks\doc.js" />
+    <Content Include="wwwroot\build\tasks\e2e.js" />
+    <Content Include="wwwroot\build\tasks\lint.js" />
+    <Content Include="wwwroot\build\tasks\prepare-release.js" />
+    <Content Include="wwwroot\build\tasks\serve.js" />
+    <Content Include="wwwroot\build\tasks\watch.js" />
+    <Content Include="wwwroot\config.js" />
+    <Content Include="wwwroot\dist\app.html" />
+    <Content Include="wwwroot\dist\app.js" />
+    <Content Include="wwwroot\dist\child-router.html" />
+    <Content Include="wwwroot\dist\child-router.js" />
+    <Content Include="wwwroot\dist\flickr.html" />
+    <Content Include="wwwroot\dist\flickr.js" />
+    <Content Include="wwwroot\dist\nav-bar.html" />
+    <Content Include="wwwroot\dist\nav-bar.js" />
+    <Content Include="wwwroot\dist\welcome.html" />
+    <Content Include="wwwroot\dist\welcome.js" />
+    <Content Include="wwwroot\gulpfile.js" />
+    <Content Include="wwwroot\index.html" />
+    <Content Include="wwwroot\karma.conf.js" />
+    <Content Include="wwwroot\protractor.conf.js" />
+    <Content Include="wwwroot\src\app.html" />
+    <Content Include="wwwroot\src\app.js" />
+    <Content Include="wwwroot\src\child-router.html" />
+    <Content Include="wwwroot\src\child-router.js" />
+    <Content Include="wwwroot\src\flickr.html" />
+    <Content Include="wwwroot\src\flickr.js" />
+    <Content Include="wwwroot\src\nav-bar.html" />
+    <Content Include="wwwroot\src\nav-bar.js" />
+    <Content Include="wwwroot\src\welcome.html" />
+    <Content Include="wwwroot\src\welcome.js" />
+    <Content Include="wwwroot\styles\styles.css" />
+    <Content Include="wwwroot\test\e2e\dist\demo.spec.js" />
+    <Content Include="wwwroot\test\e2e\dist\skeleton.po.js" />
+    <Content Include="wwwroot\test\e2e\dist\welcome.po.js" />
+    <Content Include="wwwroot\test\e2e\src\demo.spec.js" />
+    <Content Include="wwwroot\test\e2e\src\skeleton.po.js" />
+    <Content Include="wwwroot\test\e2e\src\welcome.po.js" />
+    <Content Include="wwwroot\test\unit\app.spec.js" />
+    <Content Include="wwwroot\test\unit\child-router.spec.js" />
+    <Content Include="wwwroot\test\unit\flickr.spec.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

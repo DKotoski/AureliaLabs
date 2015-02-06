@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -19,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <TypeScriptToolsVersion>1.1</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -74,7 +76,7 @@
     <Content Include="wwwroot\README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="index.html" />
+    <Content Include="wwwroot\index.html" />
     <Content Include="Web.config" />
     <Content Include="wwwroot\.gitignore" />
     <Content Include="wwwroot\build\6to5-options.js" />
@@ -89,19 +91,10 @@
     <Content Include="wwwroot\build\tasks\serve.js" />
     <Content Include="wwwroot\build\tasks\watch.js" />
     <Content Include="wwwroot\config.js" />
-    <Content Include="wwwroot\dist\app.html" />
-    <Content Include="wwwroot\dist\app.js" />
-    <Content Include="wwwroot\dist\child-router.html" />
-    <Content Include="wwwroot\dist\child-router.js" />
-    <Content Include="wwwroot\dist\flickr.html" />
-    <Content Include="wwwroot\dist\flickr.js" />
-    <Content Include="wwwroot\dist\nav-bar.html" />
-    <Content Include="wwwroot\dist\nav-bar.js" />
-    <Content Include="wwwroot\dist\welcome.html" />
-    <Content Include="wwwroot\dist\welcome.js" />
     <Content Include="wwwroot\gulpfile.js" />
     <Content Include="wwwroot\karma.conf.js" />
     <Content Include="wwwroot\protractor.conf.js" />
+    <Content Include="wwwroot\src\app.html" />
     <Content Include="wwwroot\styles\styles.css" />
     <Content Include="wwwroot\test\e2e\dist\demo.spec.js" />
     <Content Include="wwwroot\test\e2e\dist\skeleton.po.js" />
@@ -117,13 +110,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="wwwroot\src\" />
+    <TypeScriptCompile Include="wwwroot\src\app.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptModuleKind>amd</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>

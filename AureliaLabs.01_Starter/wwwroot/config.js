@@ -5,7 +5,7 @@ System.config({
     "npm:*": "jspm_packages/npm/*.js",
     "aurelia-skeleton-navigation/*": "lib/*.js"
   }
-});
+}); 
 
 System.config({
   "map": {

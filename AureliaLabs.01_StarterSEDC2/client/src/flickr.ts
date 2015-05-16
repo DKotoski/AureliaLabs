@@ -1,12 +1,15 @@
-import {autoinject} from "aurelia-framework";
+//import {autoinject} from "aurelia-framework";
+import {inject} from "aurelia-framework";
 import {HttpClient} from "aurelia-http-client";
 
-@autoinject
+//@autoinject
+@inject(HttpClient)
 export class Flickr {
     heading = "Flickr";
     images = [];
     url = "http://api.flickr.com/services/feeds/photos_public.gne?tags=rainier&tagmode=any&format=json";
     http: HttpClient;
+
     constructor(http: HttpClient) {
         this.http = http;
     }

@@ -14,6 +14,7 @@
         "!./node_modules/**/*.ts"
     ],
     "files": [
+        //"./**/*.ts",
         "./typings/aurelia-amd/aurelia-amd.d.ts",
         "./typings/aurelia/aurelia-animator-css.d.ts",
         "./typings/aurelia/aurelia-app-contacts.d.ts",

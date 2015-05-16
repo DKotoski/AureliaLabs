@@ -106,7 +106,7 @@
     <Content Include="client\src\flickr.html" />
     <TypeScriptCompile Include="client\src\flickr.ts" />
     <Content Include="client\src\nav-bar.html" />
-    <Content Include="client\src\nav-bar.js" />
+    <TypeScriptCompile Include="client\src\nav-bar.ts" />
     <Content Include="client\src\welcome.html" />
     <TypeScriptCompile Include="client\src\welcome.ts" />
     <Content Include="client\styles\styles.css" />

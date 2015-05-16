@@ -121,8 +121,6 @@
     <Content Include="client\test\unit\flickr.spec.js" />
     <Content Include="client\typings\aurelia-amd\aurelia-amd.d.js" />
     <Content Include="client\typings\core-js\core-js.d.js" />
-    <Content Include="client\typings\dojo\dojo.d.js" />
-    <Content Include="client\typings\esri\esri.d.js" />
     <Content Include="Web.config" />
     <TypeScriptCompile Include="client\typings\aurelia-amd\aurelia-amd.d.ts" />
     <TypeScriptCompile Include="client\typings\aurelia\aurelia-animator-css.d.ts" />
@@ -152,9 +150,9 @@
     <TypeScriptCompile Include="client\typings\aurelia\aurelia-templating.d.ts" />
     <TypeScriptCompile Include="client\typings\core-js.d.ts" />
     <TypeScriptCompile Include="client\typings\core-js\core-js.d.ts" />
-    <TypeScriptCompile Include="client\typings\dojo\dojo.d.ts" />
     <TypeScriptCompile Include="client\typings\es6.d.ts" />
-    <TypeScriptCompile Include="client\typings\esri\esri.d.ts" />
+    <TypeScriptCompile Include="client\typings\bootstrap\bootstrap.d.ts" />
+    <TypeScriptCompile Include="client\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="client\typings\nprogress.d.ts" />
     <TypeScriptCompile Include="client\typings\reflect-metadata.d.ts" />
   </ItemGroup>

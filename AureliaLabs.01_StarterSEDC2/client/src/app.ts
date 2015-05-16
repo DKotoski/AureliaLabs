@@ -1,7 +1,9 @@
-import {inject} from "aurelia-framework";
+import * as jquery from "jquery";
+import * as bootstrap from "bootstrap";
+import {autoinject} from "aurelia-framework";
 import {Router} from "aurelia-router";
 
-@inject(Router)
+@autoinject
 export class App {
     constructor(public router: Router) {
         this.router.configure((config) => {

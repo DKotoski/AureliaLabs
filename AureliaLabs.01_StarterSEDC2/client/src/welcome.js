@@ -1,31 +1,43 @@
-import {computedFrom} from 'aurelia-framework';
-
-export class Welcome{
-    heading = 'QWERT - Welcome to the Aurelia Navigation App!';
-    firstName = 'John';
-    lastName = 'Doe';
-
-    numberA = 5;
-    numberB= 10;
-    get result() {
-        return parseInt(this.numberA) + parseInt(this.numberB);
-    }
-
-    //Getters can't be observed with Object.observe, so they must be dirty checked.
-    //However, if you tell Aurelia the dependencies, it no longer needs to dirty check the property.
-    //To optimize by declaring the properties that this getter is computed from, uncomment the line below.
-    //@computedFrom('firstName', 'lastName')
-    get fullName(){
-        return `${this.firstName} ${this.lastName}`;
-    }
-
-    welcome(){
-        alert(`Welcome, ${this.fullName}!`);
-}
-}
-
-export class UpperValueConverter {
-    toView(value){
-        return value && value.toUpperCase();
-    }
-}
+define(["require", "exports"], function (require, exports) {
+    var Welcome = (function () {
+        function Welcome() {
+            this.heading = "QWERT - Welcome to the Aurelia Navigation App!";
+            this.firstName = "John";
+            this.lastName = "Doe";
+            this.numberA = 5;
+            this.numberB = 10;
+        }
+        Object.defineProperty(Welcome.prototype, "result", {
+            get: function () {
+                return parseInt(this.numberA.toString()) + parseInt(this.numberB.toString());
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(Welcome.prototype, "fullName", {
+            //Getters can"t be observed with Object.observe, so they must be dirty checked.
+            //However, if you tell Aurelia the dependencies, it no longer needs to dirty check the property.
+            //To optimize by declaring the properties that this getter is computed from, uncomment the line below.
+            //@computedFrom("firstName", "lastName")
+            get: function () {
+                return this.firstName + " " + this.lastName;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Welcome.prototype.welcome = function () {
+            alert("Welcome, " + this.fullName + "!");
+        };
+        return Welcome;
+    })();
+    exports.Welcome = Welcome;
+    var UpperValueConverter = (function () {
+        function UpperValueConverter() {
+        }
+        UpperValueConverter.prototype.toView = function (value) {
+            return value && value.toUpperCase();
+        };
+        return UpperValueConverter;
+    })();
+    exports.UpperValueConverter = UpperValueConverter;
+});

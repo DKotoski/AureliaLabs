@@ -59,6 +59,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="client\tsconfig.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -97,17 +98,17 @@
     <Content Include="client\package.json" />
     <Content Include="client\protractor.conf.js" />
     <Content Include="client\README.md" />
-    <Content Include="client\src\animation-main.js" />
+    <TypeScriptCompile Include="client\src\animation-main.ts" />
     <Content Include="client\src\app.html" />
     <TypeScriptCompile Include="client\src\app.ts" />
     <Content Include="client\src\child-router.html" />
-    <Content Include="client\src\child-router.js" />
+    <TypeScriptCompile Include="client\src\child-router.ts" />
     <Content Include="client\src\flickr.html" />
-    <Content Include="client\src\flickr.js" />
+    <TypeScriptCompile Include="client\src\flickr.ts" />
     <Content Include="client\src\nav-bar.html" />
     <Content Include="client\src\nav-bar.js" />
     <Content Include="client\src\welcome.html" />
-    <Content Include="client\src\welcome.js" />
+    <TypeScriptCompile Include="client\src\welcome.ts" />
     <Content Include="client\styles\styles.css" />
     <Content Include="client\test\e2e\dist\demo.spec.js" />
     <Content Include="client\test\e2e\dist\skeleton.po.js" />

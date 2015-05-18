@@ -74,7 +74,6 @@
     <Content Include="client\.npmignore" />
     <Content Include="client\aurelia.protractor.js" />
     <Content Include="client\build\args.js" />
-    <Content Include="client\build\babel-options.js" />
     <Content Include="client\build\paths.js" />
     <Content Include="client\build\tasks\build.js" />
     <Content Include="client\build\tasks\clean.js" />
@@ -94,7 +93,6 @@
     <Content Include="client\gulpfile.js" />
     <Content Include="client\index.html" />
     <Content Include="client\karma.conf.js" />
-    <Content Include="client\LICENSE" />
     <Content Include="client\package.json" />
     <Content Include="client\protractor.conf.js" />
     <Content Include="client\README.md" />

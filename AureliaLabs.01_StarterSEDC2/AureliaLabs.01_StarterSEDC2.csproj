@@ -99,8 +99,6 @@
     <TypeScriptCompile Include="client\src\animation-main.ts" />
     <Content Include="client\src\app.html" />
     <TypeScriptCompile Include="client\src\app.ts" />
-    <Content Include="client\src\child-router.html" />
-    <TypeScriptCompile Include="client\src\child-router.ts" />
     <Content Include="client\src\flickr.html" />
     <TypeScriptCompile Include="client\src\flickr.ts" />
     <Content Include="client\src\nav-bar.html" />
@@ -108,15 +106,6 @@
     <Content Include="client\src\welcome.html" />
     <TypeScriptCompile Include="client\src\welcome.ts" />
     <Content Include="client\styles\styles.css" />
-    <Content Include="client\test\e2e\dist\demo.spec.js" />
-    <Content Include="client\test\e2e\dist\skeleton.po.js" />
-    <Content Include="client\test\e2e\dist\welcome.po.js" />
-    <Content Include="client\test\e2e\src\demo.spec.js" />
-    <Content Include="client\test\e2e\src\skeleton.po.js" />
-    <Content Include="client\test\e2e\src\welcome.po.js" />
-    <Content Include="client\test\unit\app.spec.js" />
-    <Content Include="client\test\unit\child-router.spec.js" />
-    <Content Include="client\test\unit\flickr.spec.js" />
     <Content Include="client\typings\aurelia-amd\aurelia-amd.d.js" />
     <Content Include="client\typings\core-js\core-js.d.js" />
     <Content Include="Web.config" />
@@ -157,7 +146,11 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="client\test\e2e\dist\" />
+    <Folder Include="client\test\e2e\src\" />
+    <Folder Include="client\test\unit\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

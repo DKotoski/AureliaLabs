@@ -3,17 +3,18 @@
         <div class="container">
             <a href="/" class="page-logo">AurShop</a>
             <nav class="page-nav">
-                <a href="/scaffolding">Docs</a>
-                <a href="/about">About</a>
-                <a href="https://github.com/primer/primer" target="_blank">GitHub</a>
-                <a href="https://github.com/primer/primer/blob/master/README.md#install" target="_blank">Install</a>
+                <template repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
+                    <a href.bind="row.href">${row.title}</a>
+                </template>
             </nav>
         </div>
     </header>
     <div class="container">
         <div class="columns">
             <div class="three-fourths column">
-                product catalog
+                <div>
+                    <router-view></router-view>
+                </div>
             </div>
             <div class="one-fourth column">
                 <div class="cart-widget">

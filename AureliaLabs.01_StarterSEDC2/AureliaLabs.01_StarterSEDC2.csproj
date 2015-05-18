@@ -64,8 +64,6 @@
     <Content Include="client\src\ProductCatalog.html" />
     <Content Include="client\src\ShoppingCartConfirmation.html" />
     <Content Include="client\src\ShoppingCartWidget.html" />
-    <Content Include="client\src\Shop\CartConfirmation.html" />
-    <Content Include="client\src\Shop\Products.html" />
     <Content Include="client\tsconfig.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -110,8 +108,6 @@
     <TypeScriptCompile Include="client\src\ShoppingCartConfirmation.ts" />
     <TypeScriptCompile Include="client\src\ShoppingCartWidget.ts" />
     <TypeScriptCompile Include="client\src\ProductCatalog.ts" />
-    <TypeScriptCompile Include="client\src\Shop\CartConfirmation.ts" />
-    <TypeScriptCompile Include="client\src\Shop\Products.ts" />
     <TypeScriptCompile Include="client\src\_appStart.ts" />
     <TypeScriptCompile Include="client\typings\aurelia-amd\aurelia-amd.d.ts" />
     <TypeScriptCompile Include="client\typings\aurelia\aurelia-animator-css.d.ts" />

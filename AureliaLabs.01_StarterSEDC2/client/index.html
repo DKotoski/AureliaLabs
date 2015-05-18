@@ -14,8 +14,19 @@
 
     <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>
+
     <script>
-        System.import("aurelia-bootstrapper");
+        var isBrowserLessThenIE11 = (navigator.userAgent.indexOf('MSIE') !== -1);
+        var shouldLoadPolifills = isBrowserLessThenIE11;
+        if (shouldLoadPolifills) {
+            System.import("core-js").then(function () {
+                System.import("mutationobservers").then(function () {
+                    System.import("aurelia-bootstrapper");
+                })
+            });
+        } else {
+            System.import("aurelia-bootstrapper");
+        }
     </script>
 </body>
 </html>

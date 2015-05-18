@@ -30,6 +30,7 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.10",
     "font-awesome": "npm:font-awesome@4.3.0",
     "jquery": "github:components/jquery@2.1.4",
+    "polymer/mutationobservers": "github:polymer/mutationobservers@0.4.2",
     "primer/primer": "github:primer/primer@2.1.0",
     "traceur": "github:jmcriffey/bower-traceur@0.0.88",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",

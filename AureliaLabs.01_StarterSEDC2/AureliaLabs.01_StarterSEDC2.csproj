@@ -79,14 +79,12 @@
     <Content Include="client\build\tasks\clean.js" />
     <Content Include="client\build\tasks\dev.js" />
     <Content Include="client\build\tasks\doc.js" />
-    <Content Include="client\build\tasks\e2e.js" />
     <Content Include="client\build\tasks\lint.js" />
     <Content Include="client\build\tasks\prepare-release.js" />
     <Content Include="client\build\tasks\serve.js" />
     <Content Include="client\build\tasks\test.js" />
     <Content Include="client\build\tasks\watch.js" />
     <Content Include="client\config.js" />
-    <Content Include="client\CONTRIBUTING.md" />
     <Content Include="client\doc\api.json" />
     <Content Include="client\doc\CHANGELOG.md" />
     <Content Include="client\favicon.ico" />
@@ -100,6 +98,7 @@
     <Content Include="client\typings\aurelia-amd\aurelia-amd.d.js" />
     <Content Include="client\typings\core-js\core-js.d.js" />
     <Content Include="Web.config" />
+    <TypeScriptCompile Include="client\src\_appStart.ts" />
     <TypeScriptCompile Include="client\typings\aurelia-amd\aurelia-amd.d.ts" />
     <TypeScriptCompile Include="client\typings\aurelia\aurelia-animator-css.d.ts" />
     <TypeScriptCompile Include="client\typings\aurelia\aurelia-app-contacts.d.ts" />
@@ -137,12 +136,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="client\src\" />
-    <Folder Include="client\test\e2e\dist\" />
-    <Folder Include="client\test\e2e\src\" />
-    <Folder Include="client\test\unit\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

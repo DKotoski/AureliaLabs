@@ -1,6 +1,29 @@
 ﻿<template>
-    <require from="./ProductCatalog/Main" as="product-catalog"></require>
-    <h1>My App</h1>
+    <header class="page-header">
+        <div class="container">
+            <a href="/" class="page-logo">AurShop</a>
+            <nav class="page-nav">
+                <a href="/scaffolding">Docs</a>
+                <a href="/about">About</a>
+                <a href="https://github.com/primer/primer" target="_blank">GitHub</a>
+                <a href="https://github.com/primer/primer/blob/master/README.md#install" target="_blank">Install</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="columns">
+            <div class="three-fourths column">
+                product catalog
+            </div>
+            <div class="one-fourth column">
+                <div class="cart-widget">
 
-    <product-catalog></product-catalog>
+                    shopping cart widget
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            Bojan's Aurelia Lab Examples May 2015.<br>
+        </footer>
+    </div>
 </template>

@@ -1,3 +1,9 @@
 ﻿<template>
     <h2>Product Catalog</h2>
+
+    <ul>
+        <li repeat.for="product of products">
+            ${product.name} (${product.price} EUR)
+        </li>
+    </ul>
 </template>

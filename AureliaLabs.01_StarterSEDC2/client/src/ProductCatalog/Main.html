@@ -1,10 +1,11 @@
 ﻿<template>
-    <require from="./ItemCustomElement"></require>
+    <!--<require from="./ItemCustomElement"></require>-->
+    <require from="./Item"></require>
     <h1>Title: ${title}</h1>
-    
+
     <ul>
         <li repeat.for="item of items">
-            <item name.bind="item.name"></item>
+            <compose model.bind="item" view="./Item" />
         </li>
     </ul>
 </template> 

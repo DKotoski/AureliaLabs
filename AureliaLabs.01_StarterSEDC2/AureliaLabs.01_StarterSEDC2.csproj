@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="client\src\app.html" />
+    <Content Include="client\src\ProductCatalog\Item.html" />
     <Content Include="client\src\ProductCatalog\ItemCustomElement.html" />
     <Content Include="client\src\ProductCatalog\Main.html" />
     <Content Include="client\tsconfig.json" />

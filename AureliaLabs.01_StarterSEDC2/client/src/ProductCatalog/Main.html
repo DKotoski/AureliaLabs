@@ -1,0 +1,16 @@
+﻿<template>
+    <require from="./Item"></require>
+    <h1>Product Catalog</h1>
+
+    <table>
+        <tbody>
+            <tr repeat.for="item of items">
+                <td>
+                    <item model.bind="item"></item>
+                    <!--<compose view-model="./Item"></compose>-->
+                    <!--                    <item model.bind="item"></item>-->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</template>

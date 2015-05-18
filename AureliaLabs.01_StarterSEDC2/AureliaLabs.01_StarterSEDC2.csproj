@@ -60,7 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="client\src\app.html" />
-    <Content Include="client\src\ProductCatalog\Item.html" />
+    <Content Include="client\src\ProductCatalog\ItemCustomElement.html" />
     <Content Include="client\src\ProductCatalog\Main.html" />
     <Content Include="client\tsconfig.json" />
     <None Include="Web.Debug.config">
@@ -102,6 +102,7 @@
     <Content Include="client\typings\core-js\core-js.d.js" />
     <Content Include="Web.config" />
     <TypeScriptCompile Include="client\src\app.ts" />
+    <TypeScriptCompile Include="client\src\ProductCatalog\ItemCustomElement.ts" />
     <TypeScriptCompile Include="client\src\ProductCatalog\Item.ts" />
     <TypeScriptCompile Include="client\src\ProductCatalog\Main.ts" />
     <TypeScriptCompile Include="client\src\_appStart.ts" />

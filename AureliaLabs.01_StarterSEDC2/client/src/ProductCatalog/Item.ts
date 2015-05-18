@@ -1,15 +1,8 @@
-﻿module ProductCatalog {
-    export class Item {
-        $parent: any;
-        public name: string = "item";
+﻿export class Item {
+    public name: string;
 
-        bind(bindingContext) {
-            this.$parent = bindingContext;
-        }
-
-        //constructor(name?: string) {
-        //    if (name)
-        //        this.name = name;
-        //}
+    constructor(name?: string) {
+        this.name = name;
+        console.log(this.name);
     }
 }

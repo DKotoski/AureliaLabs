@@ -3,6 +3,7 @@
 
     <ul>
         <li repeat.for="product of products">
+            <button click.trigger="$parent.addToCart(product)">AddToCart</button>&nbsp;
             ${product.name} (${product.price} EUR)
         </li>
     </ul>

@@ -21,12 +21,7 @@ export class ProductCatalog {
         return true;
     }
 
-    addToCart(product) {
-        var payload = {
-            id: product.id,
-            name: product.name,
-            price: product.price
-        };
-        this.eventAggregator.publish("productBeforeAddedToCart", payload);
-    }
+    //addToCart(product) {
+
+    //}
 } 

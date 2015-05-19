@@ -1,5 +1,5 @@
 # AureliaLabs
-Lab repository for experimenting with AureliaJS and TypeScript
+Lab repository for experimenting with [AureliaJS](http://aurelia.io/) and [TypeScript](http://www.typescriptlang.org/).
 
 ## One time installations (if you don't have it already)
 

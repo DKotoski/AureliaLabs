@@ -18,3 +18,5 @@ Lab repository for experimenting with [AureliaJS](http://aurelia.io/) and [TypeS
 - gulp build
 
 After making changes in client-side code, run "gulp build" command in order to re-build the Aurelia project. Additionally, you can use "gulp watch".
+
+![](http://i.imgur.com/JviI97z.png)

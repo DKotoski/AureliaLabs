@@ -11,7 +11,7 @@ Lab repository for experimenting with AureliaJS and TypeScript
 
 ## Clone this repo and build it
 
-- git clone
+- git clone https://github.com/bojanv91/AureliaLabs.git
 - navigate to "client" folder in cmd
 - npm install
 - jspm install -y

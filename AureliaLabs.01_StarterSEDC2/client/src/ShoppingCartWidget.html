@@ -3,7 +3,12 @@
 
     <ul>
         <li repeat.for="cartItem of cartItems">
-            ${cartItem.name} (${cartItem.price} EUR)
+            ${cartItem.product.name} (${cartItem.product.price} EUR) 
+            x ${cartItem.quantity}
+            <button click.trigger="$parent.removeCartItem(cartItem)">Remove</button>
+        </li>
+        <li>
+            Total price: ${calculatedPrice}
         </li>
     </ul>
 </template>

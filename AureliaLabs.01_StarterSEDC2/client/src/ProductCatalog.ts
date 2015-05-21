@@ -7,7 +7,9 @@ import {EventAggregator} from "aurelia-event-aggregator";
 export class ProductCatalog {
     products = [];
 
-    constructor(private httpClient: HttpClient, private eventAggregator: EventAggregator) {
+    constructor(
+        private httpClient: HttpClient,
+        private eventAggregator: EventAggregator) {
 
     }
 
@@ -21,7 +23,8 @@ export class ProductCatalog {
         return true;
     }
 
-    //addToCart(product) {
-
-    //}
+    addToCart(product) {
+        console.log(product);
+        this.eventAggregator.publish("ProductAddedToCart", product);
+    }
 } 

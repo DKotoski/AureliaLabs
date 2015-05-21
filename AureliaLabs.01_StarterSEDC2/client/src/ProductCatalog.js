@@ -8,18 +8,17 @@ if (typeof __decorate !== "function") __decorate = function (decorators, target,
 };
 define(["require", "exports", "aurelia-framework"], function (require, exports, aurelia_framework_1) {
     var ProductCatalog = (function () {
-        function ProductCatalog(httpClient) {
+        function ProductCatalog(httpClient, eventAggregator) {
             this.httpClient = httpClient;
+            this.eventAggregator = eventAggregator;
             this.products = [];
         }
         ProductCatalog.prototype.activate = function () {
             var _this = this;
             this.products = [];
             this.httpClient.get("http://localhost:20127/api/products").then(function (result) {
-                for (var i = 0; i < JSON.parse(result.response); i++) {
-                    console.log(result.response[i]);
-                    _this.products.push(result.response[i]);
-                }
+                var response = JSON.parse(result.response);
+                _this.products = response;
             });
             return true;
         };
